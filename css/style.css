@@ -1,0 +1,28 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #222;
+}
+
+#interface {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    background-color: #fafafa;
+}
+
+#interface .cabecalho {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#interface .cabecalho h2 {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
