@@ -1,5 +1,10 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto";
     font-size: 12pt;
     margin: 0;
     padding: 0;
@@ -18,7 +23,7 @@
 #interface .cabecalho {
     display: block;
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
 }
 
 #interface .cabecalho h2 {
@@ -29,31 +34,48 @@
 }
 
 #interfacemain {
-    border: 1px solid yellow
-    ;
+    display:block;
 }
 
 #interface table{
-    border:  1px solid black
-    ;
-}
+    margin:0 auto;
+    padding: .5rem;
+    border-radius: .25rem;
+    box-shadow: 0 0 2px rgba(0,0,0,.8);
+    background-color: #ddd;
+}   
 
-#interface table button{
+#interface table #painel{
     display: block;
-    width: 45px;
-    height: 45px;
-    font-size: 1.5rem
-    ;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #333;
+    border-radius: .25rem;
 }
 
-#interface table button#acce {
-    font-size:  8.rem;
-    font-weight: bold
-    color #7e0a0a;
-
+#interface table #painel #txt-operadores {
+    display: block;
+    color: #fafafa;
+    text-align: right;
 }
 
-#interface table #bt-plus,
-#interface table #bt-equal{
+#interface table #painel #txt-display {
+    display: block;
+    width: 100%;  
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    color: #fafafa;
+    text-align: right;
+}
+
+#interface table button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+#interface table #bt-plus, #interface table #bt-equal{
     height: 102px;
 }
